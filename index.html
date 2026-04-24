@@ -64,27 +64,28 @@
 
         /* MEDIA AREA */
         .media {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9; /* force all previews to be same shape */
+            overflow: hidden;
+            background: #000;
         }
 
-        /* IMAGES */
-        .media img {
-            max-width: 100%;
-            border-radius: 10px;
+
+        .media img,
+        .media video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
             transition: 0.3s;
         }
 
-        .media img:hover {
-            transform: scale(1.03);
-        }
-
-        /* VIDEOS */
-        .media video {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
+        .card:hover .media img,
+        .card:hover .media video {
+            transform: scale(1.05);
         }
 
         /* LINK BUTTON */

@@ -69,20 +69,18 @@
             gap: 10px;
         }
 
-        /* IMAGES */
         .media img {
-            width: auto;
-            height: auto;
+            height: 300px;   /* same as video max-height */
+            width: auto;     /* keeps aspect ratio */
             border-radius: 10px;
             transition: 0.3s;
         }
 
         .media video {
-            max-width: 300px;
-            max-height: 300px;
-            top: 0;
-            left: 0;
-            transition: 0.3s;
+            height: 300px;
+            width: auto;
+            max-width: 100%;
+            border-radius: 10px;
         }
 
         .project:hover .media img,

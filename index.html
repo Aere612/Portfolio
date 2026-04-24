@@ -103,6 +103,77 @@
         .store-link:hover {
             background: #444;
         }
+
+        /* ===================== */
+        /* ✨ ANIMATIONS */
+        /* ===================== */
+
+        @keyframes drawArrow {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: translateX(-50%) scale(1); }
+            50% { transform: translateX(-50%) scale(1.08); }
+            100% { transform: translateX(-50%) scale(1); }
+        }
+
+        /* ===================== */
+        /* 🎓 TUTORIAL SYSTEM */
+        /* ===================== */
+
+        .tutorial-target {
+            animation: pulse 2s infinite;
+        }
+
+        .tutorial-hint {
+            position: absolute;
+            left: 130%; /* push to right of circle */
+            top: 50%;
+            transform: translateY(-50%);
+    
+            width: 220px;
+            color: #aaa;
+            font-size: 14px;
+
+            opacity: 0;
+            animation: fadeIn 1.2s ease forwards 0.5s;
+            pointer-events: none;
+        }
+
+        .tutorial-arrow {
+            width: 200px;
+            height: 100px;
+        }
+
+        .profile-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .arrow-path {
+            fill: none;
+            stroke: #888;
+            stroke-width: 2;
+
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+            animation: drawArrow 1.5s ease forwards 0.8s;
+        }
+
+        .arrow-head {
+            fill: #888;
+            opacity: 0;
+            animation: fadeIn 0.5s ease forwards 1.8s;
+        }
     </style>
 </head>
 
@@ -110,7 +181,33 @@
 
     <!-- HEADER -->
     <div class="header">
-        <img src="Assets/Me.jpg" class="profile-img">
+        <div class="profile-wrapper">
+            <a href="https://aere612.github.io/" target="_blank">
+                <img src="Assets/Me.jpg" class="profile-img">
+            </a>
+
+            <div class="tutorial-hint">
+                <div>Click to learn who I am</div>
+
+                <svg class="tutorial-arrow" viewBox="0 0 200 120">
+    
+                    <defs>
+                        <marker id="arrowHead"
+                                markerWidth="10"
+                                markerHeight="7"
+                                refX="10"
+                                refY="3.5"
+                                orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#888" />
+                        </marker>
+                    </defs>
+
+                    <path class="arrow-path"
+                          d="M180,60 C120,40 80,60 40,60"
+                          marker-end="url(#arrowHead)" />
+                </svg>
+            </div>
+        </div>
         <div class="name">Ali Eren Aydın</div>
         <div class="title">Game Developer • Unity</div>
         <div class="catchy">Check out my projects 👇</div>
@@ -314,29 +411,6 @@
             </div>
 
             <a href="https://apkpure.com/connect-stars-color-line/richie.connect.start.line.color" target="_blank" class="store-link">
-                View on Web
-            </a>
-        </div>
-
-        <div class="project">
-            <div class="project-title">Blade Master - Smash All</div>
-
-            <div class="media">
-                <img src="Assets/Blade Master - Smash All/screen-0.jpg">
-                <img src="Assets/Blade Master - Smash All/screen-1.jpg">
-                <img src="Assets/Blade Master - Smash All/screen-2.jpg">
-                <img src="Assets/Blade Master - Smash All/screen-3.jpg">
-                <img src="Assets/Blade Master - Smash All/screen-4.jpg">
-                <img src="Assets/Blade Master - Smash All/screen-5.jpg">
-                <img src="Assets/Blade Master - Smash All/screen-6.jpg">
-                <img src="Assets/Blade Master - Smash All/screen-7.jpg">
-
-                <video controls>
-                    <source src="Assets/Blade Master - Smash All/Blade Master - Smash All.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <a href="https://apkpure.com/blade-master-hit-or-miss/richie.knife.master.target.hit" target="_blank" class="store-link">
                 View on Web
             </a>
         </div>

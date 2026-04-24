@@ -1,179 +1,1088 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f0f0f;
-    color: #fff;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+        }
 
-/* HEADER */
-.header {
-    text-align: center;
-    padding: 60px 20px 30px;
-}
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
 
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #333;
-}
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #333;
+        }
 
-.name {
-    font-size: 2rem;
-    margin-bottom: 5px;
-}
+        .name {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
 
-.title {
-    color: #aaa;
-}
+        .title {
+            color: #aaa;
+        }
 
-.catchy {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: #ccc;
-}
+        .catchy {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
 
-/* PROJECT SECTION */
-.projects {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
+        /* PROJECT SECTION */
+        .projects {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
 
-/* PROJECT CARD */
-.project {
-    margin-bottom: 80px;
-    border-bottom: 1px solid #222;
-    padding-bottom: 40px;
-}
+        /* PROJECT CARD */
+        .project {
+            margin-bottom: 80px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 40px;
+        }
 
-.project-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
 
-.project-meta {
-    color: #aaa;
-    margin-bottom: 15px;
-}
+        /* MEDIA AREA */
+        .media {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-/* MEDIA AREA */
-.media {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+        /* IMAGES */
+        .media img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
 
-/* IMAGES */
-.media img {
-    max-width: 100%;
-    border-radius: 10px;
-    transition: 0.3s;
-}
+        .media img:hover {
+            transform: scale(1.03);
+        }
 
-.media img:hover {
-    transform: scale(1.03);
-}
+        /* VIDEOS */
+        .media video {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
 
-/* VIDEOS */
-.media video {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-}
+        /* LINK BUTTON */
+        .store-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #2a2a2a;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
 
-/* LINK BUTTON */
-.store-link {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #2a2a2a;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-.store-link:hover {
-    background: #444;
-}
-</style>
+        .store-link:hover {
+            background: #444;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
-    <img src="Assets/Me.jpg" class="profile-img">
-    <div class="name">Ali Eren Aydın</div>
-    <div class="title">Game Developer • Unity</div>
-    <div class="catchy">Check out my projects 👇</div>
-</div>
-
-<!-- PROJECTS -->
-<div class="projects">
-
-    <div class="project">
-        <div class="project-title">Triple Puzzle Match Object 3D</div>
-        <div class="project-meta">Match-3 3D • Unity</div>
-
-        <div class="media">
-            <img src="Assets/Triple Puzzle Match Object 3D/screen-0.jpg">
-            <img src="Assets/Triple Puzzle Match Object 3D/screen-1.jpg">
-            <img src="Assets/Triple Puzzle Match Object 3D/screen-2.jpg">
-            <img src="Assets/Triple Puzzle Match Object 3D/screen-3.jpg">
-            <img src="Assets/Triple Puzzle Match Object 3D/screen-4.jpg">
-            <img src="Assets/Triple Puzzle Match Object 3D/screen-5.jpg">
-            <img src="Assets/Triple Puzzle Match Object 3D/screen-6.jpg">
-            <img src="Assets/Triple Puzzle Match Object 3D/screen-7.jpg">
-            
-            <!-- OPTIONAL VIDEO -->
-            <video controls>
-                <source src="Assets/Triple Puzzle Match Object 3D/!!!!!!" type="video/mp4">
-            </video>
-        </div>
-
-        <a href="https://apkpure.com/match-tile-3d-puzzle-master/richie.match.tile.puzzle" target="_blank" class="store-link">
-            View on Store
-        </a>
+    <!-- HEADER -->
+    <div class="header">
+        <img src="Assets/Me.jpg" class="profile-img">
+        <div class="name">Ali Eren Aydın</div>
+        <div class="title">Game Developer • Unity</div>
+        <div class="catchy">Check out my projects 👇</div>
     </div>
 
-    <div class="project">
-        <div class="project-title">Triple Match - 3 Tile Master</div>
-        <div class="project-meta">Mahjong • Unity</div>
+    <!-- PROJECTS -->
+    <div class="projects">
 
-        <div class="media">
-            <img src="Assets/Triple Match - 3 Tile Master/screen-0.jpg">
-            <img src="Assets/Triple Match - 3 Tile Master/screen-1.jpg">
-            <img src="Assets/Triple Match - 3 Tile Master/screen-2.jpg">
-            <img src="Assets/Triple Match - 3 Tile Master/screen-3.jpg">
-            <img src="Assets/Triple Match - 3 Tile Master/screen-4.jpg">
-            <img src="Assets/Triple Match - 3 Tile Master/screen-5.jpg">
-            <img src="Assets/Triple Match - 3 Tile Master/screen-6.jpg">
-            <img src="Assets/Triple Match - 3 Tile Master/screen-7.jpg">
-            
-            <!-- OPTIONAL VIDEO -->
-            <video controls>
-                <source src="Assets/Triple Match - 3 Tile Master/Triple Match - 3 Tile Master.mp4" type="video/mp4">
-            </video>
+        <div class="project">
+            <div class="project-title">Triple Puzzle Match Object 3D</div>
+
+            <div class="media">
+                <img src="Assets/Triple Puzzle Match Object 3D/screen-0.jpg">
+                <img src="Assets/Triple Puzzle Match Object 3D/screen-1.jpg">
+                <img src="Assets/Triple Puzzle Match Object 3D/screen-2.jpg">
+                <img src="Assets/Triple Puzzle Match Object 3D/screen-3.jpg">
+                <img src="Assets/Triple Puzzle Match Object 3D/screen-4.jpg">
+                <img src="Assets/Triple Puzzle Match Object 3D/screen-5.jpg">
+                <img src="Assets/Triple Puzzle Match Object 3D/screen-6.jpg">
+                <img src="Assets/Triple Puzzle Match Object 3D/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Triple Puzzle Match Object 3D/!!!!!!" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/match-tile-3d-puzzle-master/richie.match.tile.puzzle" target="_blank" class="store-link">
+                View on Web
+            </a>
         </div>
 
-        <a href="https://apkpure.com/triple-match-3-tile-master/richie.triple.match.tile.master.zen.puzzle" target="_blank" class="store-link">
-            View on Store
-        </a>
-    </div>
+        <div class="project">
+            <div class="project-title">Triple Match - 3 Tile Master</div>
 
-</div>
+            <div class="media">
+                <img src="Assets/Triple Match - 3 Tile Master/screen-0.jpg">
+                <img src="Assets/Triple Match - 3 Tile Master/screen-1.jpg">
+                <img src="Assets/Triple Match - 3 Tile Master/screen-2.jpg">
+                <img src="Assets/Triple Match - 3 Tile Master/screen-3.jpg">
+                <img src="Assets/Triple Match - 3 Tile Master/screen-4.jpg">
+                <img src="Assets/Triple Match - 3 Tile Master/screen-5.jpg">
+                <img src="Assets/Triple Match - 3 Tile Master/screen-6.jpg">
+                <img src="Assets/Triple Match - 3 Tile Master/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Triple Match - 3 Tile Master/Triple Match - 3 Tile Master.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/triple-match-3-tile-master/richie.triple.match.tile.master.zen.puzzle" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Wood Match - Wood Block</div>
+
+            <div class="media">
+                <img src="Assets/Wood Match - Wood Block/screen-0.jpg">
+                <img src="Assets/Wood Match - Wood Block/screen-1.jpg">
+                <img src="Assets/Wood Match - Wood Block/screen-2.jpg">
+                <img src="Assets/Wood Match - Wood Block/screen-3.jpg">
+                <img src="Assets/Wood Match - Wood Block/screen-4.jpg">
+                <img src="Assets/Wood Match - Wood Block/screen-5.jpg">
+                <img src="Assets/Wood Match - Wood Block/screen-6.jpg">
+                <img src="Assets/Wood Match - Wood Block/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Wood Match - Wood Block/Wood Match - Wood Block.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/woodluck-wood-block-puzzle/richie.wood.luck.block.puzzle" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Toy Cube Match</div>
+
+            <div class="media">
+                <img src="Assets/Toy Cube Match/screen-0.jpg">
+                <img src="Assets/Toy Cube Match/screen-1.jpg">
+                <img src="Assets/Toy Cube Match/screen-2.jpg">
+                <img src="Assets/Toy Cube Match/screen-3.jpg">
+                <img src="Assets/Toy Cube Match/screen-4.jpg">
+                <img src="Assets/Toy Cube Match/screen-5.jpg">
+                <img src="Assets/Toy Cube Match/screen-6.jpg">
+                <img src="Assets/Toy Cube Match/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Toy Cube Match/Toy Cube Match.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/toy-match-cube-blast-puzzle/richie.cubes.blast.pop.match" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Drop Puzzle</div>
+
+            <div class="media">
+                <img src="Assets/Drop Puzzle/screen-0.jpg">
+                <img src="Assets/Drop Puzzle/screen-1.jpg">
+                <img src="Assets/Drop Puzzle/screen-2.jpg">
+                <img src="Assets/Drop Puzzle/screen-3.jpg">
+                <img src="Assets/Drop Puzzle/screen-4.jpg">
+                <img src="Assets/Drop Puzzle/screen-5.jpg">
+                <img src="Assets/Drop Puzzle/screen-6.jpg">
+                <img src="Assets/Drop Puzzle/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Drop Puzzle/Drop Puzzle.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/drop-block-slide-puzzle/richie.jewel.block.drop.puzzle" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Battle Zone Kill the Crowd!</div>
+
+            <div class="media">
+                <img src="Assets/Battle Zone Kill the Crowd!/screen-0.jpg">
+                <img src="Assets/Battle Zone Kill the Crowd!/screen-1.jpg">
+                <img src="Assets/Battle Zone Kill the Crowd!/screen-2.jpg">
+                <img src="Assets/Battle Zone Kill the Crowd!/screen-3.jpg">
+                <img src="Assets/Battle Zone Kill the Crowd!/screen-4.jpg">
+                <img src="Assets/Battle Zone Kill the Crowd!/screen-5.jpg">
+                <img src="Assets/Battle Zone Kill the Crowd!/screen-6.jpg">
+                <img src="Assets/Battle Zone Kill the Crowd!/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Battle Zone Kill the Crowd!/Battle Zone Kill the Crowd!.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/battle-zone-kill-the-crowd/richie.battle.zone.kill.crowd" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Pool Master - Billard Ball 3D</div>
+
+            <div class="media">
+                <img src="Assets/Pool Master - Billard Ball 3D/screen-0.jpg">
+                <img src="Assets/Pool Master - Billard Ball 3D/screen-1.jpg">
+                <img src="Assets/Pool Master - Billard Ball 3D/screen-2.jpg">
+                <img src="Assets/Pool Master - Billard Ball 3D/screen-3.jpg">
+                <img src="Assets/Pool Master - Billard Ball 3D/screen-4.jpg">
+                <img src="Assets/Pool Master - Billard Ball 3D/screen-5.jpg">
+                <img src="Assets/Pool Master - Billard Ball 3D/screen-6.jpg">
+                <img src="Assets/Pool Master - Billard Ball 3D/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Pool Master - Billard Ball 3D/Pool Master - Billard Ball 3D.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/pool-master-billard-ball-3d/richie.pool.master.real.billard.pro" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Cube Match Cube Puzzle 3D</div>
+
+            <div class="media">
+                <img src="Assets/Cube Match Cube Puzzle 3D/screen-0.jpg">
+                <img src="Assets/Cube Match Cube Puzzle 3D/screen-1.jpg">
+                <img src="Assets/Cube Match Cube Puzzle 3D/screen-2.jpg">
+                <img src="Assets/Cube Match Cube Puzzle 3D/screen-3.jpg">
+                <img src="Assets/Cube Match Cube Puzzle 3D/screen-4.jpg">
+                <img src="Assets/Cube Match Cube Puzzle 3D/screen-5.jpg">
+                <img src="Assets/Cube Match Cube Puzzle 3D/screen-6.jpg">
+                <img src="Assets/Cube Match Cube Puzzle 3D/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Cube Match Cube Puzzle 3D/Cube Match Cube Puzzle 3D.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/cube-match-master-3d-puzzle/richie.cube.master.match3D.triple.puzzle" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Connect Stars - Color & Line</div>
+
+            <div class="media">
+                <img src="Assets/Connect Stars - Color & Line/screen-0.jpg">
+                <img src="Assets/Connect Stars - Color & Line/screen-1.jpg">
+                <img src="Assets/Connect Stars - Color & Line/screen-2.jpg">
+                <img src="Assets/Connect Stars - Color & Line/screen-3.jpg">
+                <img src="Assets/Connect Stars - Color & Line/screen-4.jpg">
+                <img src="Assets/Connect Stars - Color & Line/screen-5.jpg">
+                <img src="Assets/Connect Stars - Color & Line/screen-6.jpg">
+                <img src="Assets/Connect Stars - Color & Line/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Connect Stars - Color & Line/Connect Stars - Color & Line.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/connect-stars-color-line/richie.connect.start.line.color" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Blade Master - Smash All</div>
+
+            <div class="media">
+                <img src="Assets/Blade Master - Smash All/screen-0.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-1.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-2.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-3.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-4.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-5.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-6.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Blade Master - Smash All/Blade Master - Smash All.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/blade-master-hit-or-miss/richie.knife.master.target.hit" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Blade Master - Smash All</div>
+
+            <div class="media">
+                <img src="Assets/Blade Master - Smash All/screen-0.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-1.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-2.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-3.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-4.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-5.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-6.jpg">
+                <img src="Assets/Blade Master - Smash All/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Blade Master - Smash All/Blade Master - Smash All.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/blade-master-hit-or-miss/richie.knife.master.target.hit" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Marble Space - Meteor Blast</div>
+
+            <div class="media">
+                <img src="Assets/Marble Space - Meteor Blast/screen-0.jpg">
+                <img src="Assets/Marble Space - Meteor Blast/screen-1.jpg">
+                <img src="Assets/Marble Space - Meteor Blast/screen-2.jpg">
+                <img src="Assets/Marble Space - Meteor Blast/screen-3.jpg">
+                <img src="Assets/Marble Space - Meteor Blast/screen-4.jpg">
+                <img src="Assets/Marble Space - Meteor Blast/screen-5.jpg">
+                <img src="Assets/Marble Space - Meteor Blast/screen-6.jpg">
+                <img src="Assets/Marble Space - Meteor Blast/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Marble Space - Meteor Blast/Marble Space - Meteor Blast.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/marble-space-zumba-match/richie.space.marble.meteor.blast" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Smash Meteor - Cannon Blast</div>
+
+            <div class="media">
+                <img src="Assets/Smash Meteor - Cannon Blast/screen-0.jpg">
+                <img src="Assets/Smash Meteor - Cannon Blast/screen-1.jpg">
+                <img src="Assets/Smash Meteor - Cannon Blast/screen-2.jpg">
+                <img src="Assets/Smash Meteor - Cannon Blast/screen-3.jpg">
+                <img src="Assets/Smash Meteor - Cannon Blast/screen-4.jpg">
+                <img src="Assets/Smash Meteor - Cannon Blast/screen-5.jpg">
+                <img src="Assets/Smash Meteor - Cannon Blast/screen-6.jpg">
+                <img src="Assets/Smash Meteor - Cannon Blast/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Smash Meteor - Cannon Blast/Smash Meteor - Cannon Blast.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/smash-meteor-cannon-blast/richie.smash.meteor.cannon.blast.shooter" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Richie Family - Catch Thief</div>
+
+            <div class="media">
+                <img src="Assets/Richie Family - Catch Thief/screen-0.jpg">
+                <img src="Assets/Richie Family - Catch Thief/screen-1.jpg">
+                <img src="Assets/Richie Family - Catch Thief/screen-2.jpg">
+                <img src="Assets/Richie Family - Catch Thief/screen-3.jpg">
+                <img src="Assets/Richie Family - Catch Thief/screen-4.jpg">
+                <img src="Assets/Richie Family - Catch Thief/screen-5.jpg">
+                <img src="Assets/Richie Family - Catch Thief/screen-6.jpg">
+                <img src="Assets/Richie Family - Catch Thief/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Richie Family - Catch Thief/Richie Family - Catch Thief.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/richie-family-catch-thief/richie.catchthief.pin.puzzle" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Tiny Mellow - Color Escape</div>
+
+            <div class="media">
+                <img src="Assets/Tiny Mellow - Color Escape/screen-0.jpg">
+                <img src="Assets/Tiny Mellow - Color Escape/screen-1.jpg">
+                <img src="Assets/Tiny Mellow - Color Escape/screen-2.jpg">
+                <img src="Assets/Tiny Mellow - Color Escape/screen-3.jpg">
+                <img src="Assets/Tiny Mellow - Color Escape/screen-4.jpg">
+                <img src="Assets/Tiny Mellow - Color Escape/screen-5.jpg">
+                <img src="Assets/Tiny Mellow - Color Escape/screen-6.jpg">
+                <img src="Assets/Tiny Mellow - Color Escape/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Tiny Mellow - Color Escape/Tiny Mellow - Color Escape.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/little-mellow-color-escape/richie.color.adventure.paint.tomb" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Tap Ball - Don't Fall</div>
+
+            <div class="media">
+                <img src="Assets/Tap Ball - Don't Fall/screen-0.jpg">
+                <img src="Assets/Tap Ball - Don't Fall/screen-1.jpg">
+                <img src="Assets/Tap Ball - Don't Fall/screen-2.jpg">
+                <img src="Assets/Tap Ball - Don't Fall/screen-3.jpg">
+                <img src="Assets/Tap Ball - Don't Fall/screen-4.jpg">
+                <img src="Assets/Tap Ball - Don't Fall/screen-5.jpg">
+                <img src="Assets/Tap Ball - Don't Fall/screen-6.jpg">
+                <img src="Assets/Tap Ball - Don't Fall/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/tap-ball-don-t-fall/richie.zigzag.road.tap.ball" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Hexa Block</div>
+
+            <div class="media">
+                <img src="Assets/Hexa Block/screen-0.jpg">
+                <img src="Assets/Hexa Block/screen-1.jpg">
+                <img src="Assets/Hexa Block/screen-2.jpg">
+                <img src="Assets/Hexa Block/screen-3.jpg">
+                <img src="Assets/Hexa Block/screen-4.jpg">
+                <img src="Assets/Hexa Block/screen-5.jpg">
+                <img src="Assets/Hexa Block/screen-6.jpg">
+                <img src="Assets/Hexa Block/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/tetrix-hexa-block-puzzle/richie.crazex.hexa.blockpuzzle" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Housewife Sim - 3D Sorting</div>
+
+            <div class="media">
+                <img src="Assets/Housewife Sim - 3D Sorting/screen-0.jpg">
+                <img src="Assets/Housewife Sim - 3D Sorting/screen-1.jpg">
+                <img src="Assets/Housewife Sim - 3D Sorting/screen-2.jpg">
+                <img src="Assets/Housewife Sim - 3D Sorting/screen-3.jpg">
+                <img src="Assets/Housewife Sim - 3D Sorting/screen-4.jpg">
+                <img src="Assets/Housewife Sim - 3D Sorting/screen-5.jpg">
+                <img src="Assets/Housewife Sim - 3D Sorting/screen-6.jpg">
+                <img src="Assets/Housewife Sim - 3D Sorting/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/housewife-sim-3d-sorting/richie.housewife.sim.clothes.sorting" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Arena Fighters - Block Battle</div>
+
+            <div class="media">
+                <img src="Assets/Arena Fighters - Block Battle/screen-0.jpg">
+                <img src="Assets/Arena Fighters - Block Battle/screen-1.jpg">
+                <img src="Assets/Arena Fighters - Block Battle/screen-2.jpg">
+                <img src="Assets/Arena Fighters - Block Battle/screen-3.jpg">
+                <img src="Assets/Arena Fighters - Block Battle/screen-4.jpg">
+                <img src="Assets/Arena Fighters - Block Battle/screen-5.jpg">
+                <img src="Assets/Arena Fighters - Block Battle/screen-6.jpg">
+                <img src="Assets/Arena Fighters - Block Battle/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/arena-fighters-block-battle/richie.boxing.fighters.block.battle" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Emoji Color Jump</div>
+
+            <div class="media">
+                <img src="Assets/Emoji Color Jump/screen-0.jpg">
+                <img src="Assets/Emoji Color Jump/screen-1.jpg">
+                <img src="Assets/Emoji Color Jump/screen-2.jpg">
+                <img src="Assets/Emoji Color Jump/screen-3.jpg">
+                <img src="Assets/Emoji Color Jump/screen-4.jpg">
+                <img src="Assets/Emoji Color Jump/screen-5.jpg">
+                <img src="Assets/Emoji Color Jump/screen-6.jpg">
+                <img src="Assets/Emoji Color Jump/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Emoji Color Jump/Emoji Color Jump.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/emoji-color-jump/richie.match.ball.shape.jump" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Ant Manager Sim</div>
+
+            <div class="media">
+                <img src="Assets/Ant Manager Sim/screen-0.jpg">
+                <img src="Assets/Ant Manager Sim/screen-1.jpg">
+                <img src="Assets/Ant Manager Sim/screen-2.jpg">
+                <img src="Assets/Ant Manager Sim/screen-3.jpg">
+                <img src="Assets/Ant Manager Sim/screen-4.jpg">
+                <img src="Assets/Ant Manager Sim/screen-5.jpg">
+                <img src="Assets/Ant Manager Sim/screen-6.jpg">
+                <img src="Assets/Ant Manager Sim/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Ant Manager Sim/Ant Manager Sim.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/eats-manager-idle-ant-tycoon/richie.swarm.eats.idle.ants.tycoon.colony" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Air Defender</div>
+
+            <div class="media">
+                <img src="Assets/Air Defender/screen-0.jpg">
+                <img src="Assets/Air Defender/screen-1.jpg">
+                <img src="Assets/Air Defender/screen-2.jpg">
+                <img src="Assets/Air Defender/screen-3.jpg">
+                <img src="Assets/Air Defender/screen-4.jpg">
+                <img src="Assets/Air Defender/screen-5.jpg">
+                <img src="Assets/Air Defender/screen-6.jpg">
+                <img src="Assets/Air Defender/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Air Defender/Air Defender.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/air-defender/richie.plane.merge.air.defender" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Neon Racer - Retro City</div>
+
+            <div class="media">
+                <img src="Assets/Neon Racer - Retro City/screen-0.jpg">
+                <img src="Assets/Neon Racer - Retro City/screen-1.jpg">
+                <img src="Assets/Neon Racer - Retro City/screen-2.jpg">
+                <img src="Assets/Neon Racer - Retro City/screen-3.jpg">
+                <img src="Assets/Neon Racer - Retro City/screen-4.jpg">
+                <img src="Assets/Neon Racer - Retro City/screen-5.jpg">
+                <img src="Assets/Neon Racer - Retro City/screen-6.jpg">
+                <img src="Assets/Neon Racer - Retro City/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Neon Racer - Retro City/Neon Racer - Retro City.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/neon-racer-retro-city/richie.retro.traffic.city.racer" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Mega Parking - Car Park Sim 3D</div>
+
+            <div class="media">
+                <img src="Assets/Mega Parking - Car Park Sim 3D/screen-0.jpg">
+                <img src="Assets/Mega Parking - Car Park Sim 3D/screen-1.jpg">
+                <img src="Assets/Mega Parking - Car Park Sim 3D/screen-2.jpg">
+                <img src="Assets/Mega Parking - Car Park Sim 3D/screen-3.jpg">
+                <img src="Assets/Mega Parking - Car Park Sim 3D/screen-4.jpg">
+                <img src="Assets/Mega Parking - Car Park Sim 3D/screen-5.jpg">
+                <img src="Assets/Mega Parking - Car Park Sim 3D/screen-6.jpg">
+                <img src="Assets/Mega Parking - Car Park Sim 3D/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Mega Parking - Car Park Sim 3D/Mega Parking - Car Park Sim 3D.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/mega-parking-car-park-sim-3d/richie.real.carpark.garage.sim" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Kill The Crowd - Quiz of Death</div>
+
+            <div class="media">
+                <img src="Assets/Kill The Crowd - Quiz of Death/screen-0.jpg">
+                <img src="Assets/Kill The Crowd - Quiz of Death/screen-1.jpg">
+                <img src="Assets/Kill The Crowd - Quiz of Death/screen-2.jpg">
+                <img src="Assets/Kill The Crowd - Quiz of Death/screen-3.jpg">
+                <img src="Assets/Kill The Crowd - Quiz of Death/screen-4.jpg">
+                <img src="Assets/Kill The Crowd - Quiz of Death/screen-5.jpg">
+                <img src="Assets/Kill The Crowd - Quiz of Death/screen-6.jpg">
+                <img src="Assets/Kill The Crowd - Quiz of Death/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Kill The Crowd - Quiz of Death/Kill The Crowd - Quiz of Death.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/kill-the-crowd-quiz-of-death/richie.trivia.kill.crowd.quiz.answer" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Fortune Balls - Mega Casino</div>
+
+            <div class="media">
+                <img src="Assets/Fortune Balls - Mega Casino/screen-0.jpg">
+                <img src="Assets/Fortune Balls - Mega Casino/screen-1.jpg">
+                <img src="Assets/Fortune Balls - Mega Casino/screen-2.jpg">
+                <img src="Assets/Fortune Balls - Mega Casino/screen-3.jpg">
+                <img src="Assets/Fortune Balls - Mega Casino/screen-4.jpg">
+                <img src="Assets/Fortune Balls - Mega Casino/screen-5.jpg">
+                <img src="Assets/Fortune Balls - Mega Casino/screen-6.jpg">
+                <img src="Assets/Fortune Balls - Mega Casino/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/fortune-balls-mega-casino/richie.mega.balls.casino" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Pirate Slot</div>
+
+            <div class="media">
+                <img src="Assets/Pirate Slot/screen-0.jpg">
+                <img src="Assets/Pirate Slot/screen-1.jpg">
+                <img src="Assets/Pirate Slot/screen-2.jpg">
+                <img src="Assets/Pirate Slot/screen-3.jpg">
+                <img src="Assets/Pirate Slot/screen-4.jpg">
+                <img src="Assets/Pirate Slot/screen-5.jpg">
+                <img src="Assets/Pirate Slot/screen-6.jpg">
+                <img src="Assets/Pirate Slot/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/pirate-slot/richie.pirate.slot" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Ant Simulation - Idle Manager</div>
+
+            <div class="media">
+                <img src="Assets/Ant Simulation - Idle Manager/screen-0.jpg">
+                <img src="Assets/Ant Simulation - Idle Manager/screen-1.jpg">
+                <img src="Assets/Ant Simulation - Idle Manager/screen-2.jpg">
+                <img src="Assets/Ant Simulation - Idle Manager/screen-3.jpg">
+                <img src="Assets/Ant Simulation - Idle Manager/screen-4.jpg">
+                <img src="Assets/Ant Simulation - Idle Manager/screen-5.jpg">
+                <img src="Assets/Ant Simulation - Idle Manager/screen-6.jpg">
+                <img src="Assets/Ant Simulation - Idle Manager/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Ant Simulation - Idle Manager/Ant Simulation - Idle Manager.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/ant-simulation-idle-manager/richie.eats.idle.ants.colony.pocket.simulator" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Mega Solitaire</div>
+
+            <div class="media">
+                <img src="Assets/Mega Solitaire/screen-0.jpg">
+                <img src="Assets/Mega Solitaire/screen-1.jpg">
+                <img src="Assets/Mega Solitaire/screen-2.jpg">
+                <img src="Assets/Mega Solitaire/screen-3.jpg">
+                <img src="Assets/Mega Solitaire/screen-4.jpg">
+                <img src="Assets/Mega Solitaire/screen-5.jpg">
+                <img src="Assets/Mega Solitaire/screen-6.jpg">
+                <img src="Assets/Mega Solitaire/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Mega Solitaire/Mega Solitaire.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/zen-solitaire-classic-card/richie.solitaire.calm.classic.card" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Richie Baccarat - 3D Casino</div>
+
+            <div class="media">
+                <img src="Assets/Richie Baccarat - 3D Casino/screen-0.jpg">
+                <img src="Assets/Richie Baccarat - 3D Casino/screen-1.jpg">
+                <img src="Assets/Richie Baccarat - 3D Casino/screen-2.jpg">
+                <img src="Assets/Richie Baccarat - 3D Casino/screen-3.jpg">
+                <img src="Assets/Richie Baccarat - 3D Casino/screen-4.jpg">
+                <img src="Assets/Richie Baccarat - 3D Casino/screen-5.jpg">
+                <img src="Assets/Richie Baccarat - 3D Casino/screen-6.jpg">
+                <img src="Assets/Richie Baccarat - 3D Casino/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Richie Baccarat - 3D Casino/Richie Baccarat - 3D Casino.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/baccarat-3d-lucky-cards/richie.mega.baccarat.real.casino" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Parking Line - Car Puzzle</div>
+
+            <div class="media">
+                <img src="Assets/Parking Line - Car Puzzle/screen-0.jpg">
+                <img src="Assets/Parking Line - Car Puzzle/screen-1.jpg">
+                <img src="Assets/Parking Line - Car Puzzle/screen-2.jpg">
+                <img src="Assets/Parking Line - Car Puzzle/screen-3.jpg">
+                <img src="Assets/Parking Line - Car Puzzle/screen-4.jpg">
+                <img src="Assets/Parking Line - Car Puzzle/screen-5.jpg">
+                <img src="Assets/Parking Line - Car Puzzle/screen-6.jpg">
+                <img src="Assets/Parking Line - Car Puzzle/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Parking Line - Car Puzzle/Parking Line - Car Puzzle.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/parking-line-car-park-puzzle/richie.car.parking.traffic.master" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Mega Blackjack - 3D Casino</div>
+
+            <div class="media">
+                <img src="Assets/Mega Blackjack - 3D Casino/screen-0.jpg">
+                <img src="Assets/Mega Blackjack - 3D Casino/screen-1.jpg">
+                <img src="Assets/Mega Blackjack - 3D Casino/screen-2.jpg">
+                <img src="Assets/Mega Blackjack - 3D Casino/screen-3.jpg">
+                <img src="Assets/Mega Blackjack - 3D Casino/screen-4.jpg">
+                <img src="Assets/Mega Blackjack - 3D Casino/screen-5.jpg">
+                <img src="Assets/Mega Blackjack - 3D Casino/screen-6.jpg">
+                <img src="Assets/Mega Blackjack - 3D Casino/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Mega Blackjack - 3D Casino/Mega Blackjack - 3D Casino.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/mega-blackjack-21-3d-casino/richie.mega.blackjack.casino" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Football Shot - Goal Champ</div>
+
+            <div class="media">
+                <img src="Assets/Football Shot - Goal Champ/screen-0.jpg">
+                <img src="Assets/Football Shot - Goal Champ/screen-1.jpg">
+                <img src="Assets/Football Shot - Goal Champ/screen-2.jpg">
+                <img src="Assets/Football Shot - Goal Champ/screen-3.jpg">
+                <img src="Assets/Football Shot - Goal Champ/screen-4.jpg">
+                <img src="Assets/Football Shot - Goal Champ/screen-5.jpg">
+                <img src="Assets/Football Shot - Goal Champ/screen-6.jpg">
+                <img src="Assets/Football Shot - Goal Champ/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/football-shot-goal-champ/richie.football.kick.soccer.strike" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Sweet Slot - Mega Casino</div>
+
+            <div class="media">
+                <img src="Assets/Sweet Slot - Mega Casino/screen-0.jpg">
+                <img src="Assets/Sweet Slot - Mega Casino/screen-1.jpg">
+                <img src="Assets/Sweet Slot - Mega Casino/screen-2.jpg">
+                <img src="Assets/Sweet Slot - Mega Casino/screen-3.jpg">
+                <img src="Assets/Sweet Slot - Mega Casino/screen-4.jpg">
+                <img src="Assets/Sweet Slot - Mega Casino/screen-5.jpg">
+                <img src="Assets/Sweet Slot - Mega Casino/screen-6.jpg">
+                <img src="Assets/Sweet Slot - Mega Casino/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Sweet Slot - Mega Casino/Sweet Slot - Mega Casino.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/sweet-slots-mega-casino/richie.candy.casino.jackpot.slots" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">SweeTile - Match 3 Tile</div>
+
+            <div class="media">
+                <img src="Assets/SweeTile - Match 3 Tile/screen-0.jpg">
+                <img src="Assets/SweeTile - Match 3 Tile/screen-1.jpg">
+                <img src="Assets/SweeTile - Match 3 Tile/screen-2.jpg">
+                <img src="Assets/SweeTile - Match 3 Tile/screen-3.jpg">
+                <img src="Assets/SweeTile - Match 3 Tile/screen-4.jpg">
+                <img src="Assets/SweeTile - Match 3 Tile/screen-5.jpg">
+                <img src="Assets/SweeTile - Match 3 Tile/screen-6.jpg">
+                <img src="Assets/SweeTile - Match 3 Tile/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/sweetile-match-3-tile/richie.candy.tile.puzzle" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Treasure Spin - Fortune Wheel</div>
+
+            <div class="media">
+                <img src="Assets/Treasure Spin - Fortune Wheel/screen-0.jpg">
+                <img src="Assets/Treasure Spin - Fortune Wheel/screen-1.jpg">
+                <img src="Assets/Treasure Spin - Fortune Wheel/screen-2.jpg">
+                <img src="Assets/Treasure Spin - Fortune Wheel/screen-3.jpg">
+                <img src="Assets/Treasure Spin - Fortune Wheel/screen-4.jpg">
+                <img src="Assets/Treasure Spin - Fortune Wheel/screen-5.jpg">
+                <img src="Assets/Treasure Spin - Fortune Wheel/screen-6.jpg">
+                <img src="Assets/Treasure Spin - Fortune Wheel/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Treasure Spin - Fortune Wheel/Treasure Spin - Fortune Wheel.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/mega-spin-fortune-wheel/richie.mega.wheel.spin.casino.slots" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Triple Pair 3D</div>
+
+            <div class="media">
+                <img src="Assets/Triple Pair 3D/screen-0.jpg">
+                <img src="Assets/Triple Pair 3D/screen-1.jpg">
+                <img src="Assets/Triple Pair 3D/screen-2.jpg">
+                <img src="Assets/Triple Pair 3D/screen-3.jpg">
+                <img src="Assets/Triple Pair 3D/screen-4.jpg">
+                <img src="Assets/Triple Pair 3D/screen-5.jpg">
+                <img src="Assets/Triple Pair 3D/screen-6.jpg">
+                <img src="Assets/Triple Pair 3D/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Triple Pair 3D/Triple Pair 3D.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <a href="https://apkpure.com/triple-pair-3d-match-masters/richie.triple.pair.match.tile.masters" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Memory Lane - Jigsaw Puzzles</div>
+
+            <div class="media">
+                <img src="Assets/Triple Pair 3D/screen-0.jpg">
+                <img src="Assets/Triple Pair 3D/screen-1.jpg">
+                <img src="Assets/Triple Pair 3D/screen-2.jpg">
+                <img src="Assets/Triple Pair 3D/screen-3.jpg">
+                <img src="Assets/Triple Pair 3D/screen-4.jpg">
+                <img src="Assets/Triple Pair 3D/screen-5.jpg">
+                <img src="Assets/Triple Pair 3D/screen-6.jpg">
+                <img src="Assets/Triple Pair 3D/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/memory-lane-jigsaw-puzzles/richie.color.memory.lane.jigsaw.puzzle" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Luck Roulette Fortune Wheel</div>
+
+            <div class="media">
+                <img src="Assets/Luck Roulette Fortune Wheel/screen-0.jpg">
+                <img src="Assets/Luck Roulette Fortune Wheel/screen-1.jpg">
+                <img src="Assets/Luck Roulette Fortune Wheel/screen-2.jpg">
+                <img src="Assets/Luck Roulette Fortune Wheel/screen-3.jpg">
+                <img src="Assets/Luck Roulette Fortune Wheel/screen-4.jpg">
+                <img src="Assets/Luck Roulette Fortune Wheel/screen-5.jpg">
+                <img src="Assets/Luck Roulette Fortune Wheel/screen-6.jpg">
+                <img src="Assets/Luck Roulette Fortune Wheel/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Luck Roulette Fortune Wheel/Luck Roulette Fortune Wheel.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/mega-roulette-casino-wheel/richie.mega.roulette.royale" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Match Object 3D - Pair Puzzle</div>
+
+            <div class="media">
+                <img src="Assets/Match Object 3D - Pair Puzzle/screen-0.jpg">
+                <img src="Assets/Match Object 3D - Pair Puzzle/screen-1.jpg">
+                <img src="Assets/Match Object 3D - Pair Puzzle/screen-2.jpg">
+                <img src="Assets/Match Object 3D - Pair Puzzle/screen-3.jpg">
+                <img src="Assets/Match Object 3D - Pair Puzzle/screen-4.jpg">
+                <img src="Assets/Match Object 3D - Pair Puzzle/screen-5.jpg">
+                <img src="Assets/Match Object 3D - Pair Puzzle/screen-6.jpg">
+                <img src="Assets/Match Object 3D - Pair Puzzle/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Match Object 3D - Pair Puzzle/Match Object 3D - Pair Puzzle.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/match-object-3d-pair-puzzle/richie.match.object.pair.master" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Mega Casino - Fortune Slot</div>
+
+            <div class="media">
+                <img src="Assets/Mega Casino - Fortune Slot/screen-0.jpg">
+                <img src="Assets/Mega Casino - Fortune Slot/screen-1.jpg">
+                <img src="Assets/Mega Casino - Fortune Slot/screen-2.jpg">
+                <img src="Assets/Mega Casino - Fortune Slot/screen-3.jpg">
+                <img src="Assets/Mega Casino - Fortune Slot/screen-4.jpg">
+                <img src="Assets/Mega Casino - Fortune Slot/screen-5.jpg">
+                <img src="Assets/Mega Casino - Fortune Slot/screen-6.jpg">
+                <img src="Assets/Mega Casino - Fortune Slot/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Mega Casino - Fortune Slot/Mega Casino - Fortune Slot.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/mega-casino-fortune-slot/richie.crypto.bank.lucky.slots" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Find Words - Crossword Puzzle</div>
+
+            <div class="media">
+                <img src="Assets/Find Words - Crossword Puzzle/screen-0.jpg">
+                <img src="Assets/Find Words - Crossword Puzzle/screen-1.jpg">
+                <img src="Assets/Find Words - Crossword Puzzle/screen-2.jpg">
+                <img src="Assets/Find Words - Crossword Puzzle/screen-3.jpg">
+                <img src="Assets/Find Words - Crossword Puzzle/screen-4.jpg">
+                <img src="Assets/Find Words - Crossword Puzzle/screen-5.jpg">
+                <img src="Assets/Find Words - Crossword Puzzle/screen-6.jpg">
+                <img src="Assets/Find Words - Crossword Puzzle/screen-7.jpg">
+            </div>
+
+            <a href="https://apkpure.com/find-words-crossword-puzzle/richie.find.words.cross.puzzles" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Mr Richie - Revenge Bullet</div>
+
+            <div class="media">
+                <img src="Assets/Mr Richie - Revenge Bullet/screen-0.jpg">
+                <img src="Assets/Mr Richie - Revenge Bullet/screen-1.jpg">
+                <img src="Assets/Mr Richie - Revenge Bullet/screen-2.jpg">
+                <img src="Assets/Mr Richie - Revenge Bullet/screen-3.jpg">
+                <img src="Assets/Mr Richie - Revenge Bullet/screen-4.jpg">
+                <img src="Assets/Mr Richie - Revenge Bullet/screen-5.jpg">
+                <img src="Assets/Mr Richie - Revenge Bullet/screen-6.jpg">
+                <img src="Assets/Mr Richie - Revenge Bullet/screen-7.jpg">
+
+                <video controls>
+                    <source src="Assets/Mr Richie - Revenge Bullet/Mr Richie - Revenge Bullet.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <a href="https://apkpure.com/mr-richie-revenge-bullet/richie.revenge.bullet.run.shoot" target="_blank" class="store-link">
+                View on Web
+            </a>
+        </div>
+    </div>
 
 </body>
+
 </html>
